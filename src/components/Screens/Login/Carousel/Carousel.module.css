@@ -1,0 +1,22 @@
+.container{
+  padding: 8vh 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading{
+  color: #0415aa;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.headingTop{
+  text-align: center;
+}
+
+.cont{
+  width: 100%;
+  padding: 1vh 0;
+}
