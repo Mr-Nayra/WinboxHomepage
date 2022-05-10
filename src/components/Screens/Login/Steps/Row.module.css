@@ -2,7 +2,7 @@
     margin: 3vh 5.8vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .details{

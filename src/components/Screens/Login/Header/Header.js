@@ -2,20 +2,28 @@ import classes from "./Header.module.css";
 import Logo from "../../../Icons/Logo";
 import Button from "../../../UI/Button/Button";
 import BlueButton from "../../../UI/BlueButton/Button";
+import { Container } from "../../../UI/Card/Card";
+
+const redirect = () => {
+  window.location.href = "https://app.getwinbox.co/login";
+}
 
 const Header = (props) => {
   return (
-    <div className={classes.container}>
-      <Logo className={classes.logo} height="10vh" width="133px" />
-      <div className={classes.flex}>
-        <BlueButton href="#" className={classes.bluebutton}>
-          Connect Your Inbox
-        </BlueButton>
-        <Button href="#" className={classes.button}>
-          Get Started
-        </Button>
+      <div className={classes.container}>
+      <Container>
+        <Logo className={classes.logo} />
+        <div className={classes.flex}>
+          <BlueButton href="#">
+            Connect Your Inbox
+          </BlueButton>
+          <Button onClick={redirect} className={classes.button}>
+            Get Started
+          </Button>
+        </div>
+        </Container>
       </div>
-    </div>
+
   );
 };
 

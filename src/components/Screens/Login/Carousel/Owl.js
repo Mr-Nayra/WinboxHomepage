@@ -5,12 +5,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import classes from "./owl.module.css";
 import "./owl.css";
-import AOLIcon from "./Icons/AOLIcon";
-import AWSIcon from "./Icons/awsIcon";
-import GoogleIcon from "./Icons/GoogleIcon";
-import SalesforceIcon from "./Icons/SalesforceIcon";
-import SquareIcon from "./Icons/SquareIcon";
-import SwirlyIcon from "./Icons/SwirlyIcon";
 
 const Owl = (props) => {
   return (
@@ -30,22 +24,32 @@ const Owl = (props) => {
           ]}
         >
           <div className={classes.card}>
-            <GoogleIcon />
+            <img
+              src={require('./Icons/Gmail.png')}
+              alt="banner"
+              className={classes.img}
+            />
           </div>
           <div className={classes.card}>
-            <SquareIcon />
+            <img
+              src={require('./Icons/Outlook.png')}
+              alt="banner"
+              className={classes.img}
+            />
           </div>
           <div className={classes.card}>
-            <SwirlyIcon />
+            <img
+              src={require('./Icons/Yahoo.png')}
+              alt="banner"
+              className={classes.img}
+            />
           </div>
           <div className={classes.card}>
-            <AWSIcon />
-          </div>
-          <div className={classes.card}>
-            <SalesforceIcon />
-          </div>
-          <div className={classes.card}>
-            <AOLIcon />
+            <img
+              src={require('./Icons/Outlook.png')}
+              alt="banner"
+              className={classes.img}
+            />
           </div>
         </OwlCarousel>
       </React.StrictMode>

@@ -1,9 +1,9 @@
 const Icon = (props) => {
   return (
     <svg
-    className={props.className}
-      width={props.width || "80px"}
-      height={props.height || "5.5vh"}
+      className={props.className}
+      width="auto"
+      height="auto"
       viewBox="0 0 158 56"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

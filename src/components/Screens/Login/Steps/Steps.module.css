@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
-.container{
+.container {
   padding: 8vh 8vw;
   background: #f5f6ff;
+}
+
+.img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  image-rendering: high-quality;
 }

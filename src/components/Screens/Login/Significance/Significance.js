@@ -6,10 +6,12 @@ import ImproveIcon from "./Icons/ImproveIcon";
 import MessageIcon from "./Icons/MessageIcon";
 import RestrictedIcon from "./Icons/RestrictedIcon";
 import TrashIcon from "./Icons/TrashIcon";
+import { Container } from "../../../UI/Card/Card";
 
 const Significance = (props) => {
   return (
     <div className={classes.container}>
+    <Container style={{ flexDirection: "column" }}>
       <div className={classes.cont}>
         <Heading447 className={classes.heading}>
           What is the significance of email <br />
@@ -21,11 +23,11 @@ const Significance = (props) => {
       </div>
       <div className={classes.con}>
         <div>
-          <img
-            src="https://getwinbox.online/static/assets/image/bannerwin.gif"
-            alt="banner"
-            className={classes.gif}
-          />
+        <img
+          src={require('./red.gif')}
+          alt="banner"
+          className={classes.gif}
+        />
         </div>
         <div className={classes.details}>
           <Heading327 className={classes.headingred}>Without </Heading327>
@@ -76,12 +78,13 @@ const Significance = (props) => {
         </div>
         <div>
           <img
-            src="https://getwinbox.online/static/assets/image/bannerwin.gif"
+            src={require('./blue.gif')}
             alt="banner"
             className={classes.gif}
           />
         </div>
       </div>
+      </Container>
     </div>
   );
 };

@@ -7,10 +7,12 @@ import SettingsIcon from "./Icons/SettingsIcon";
 import Card from "./Card";
 import Cont from "../../../UI/Card/Card";
 import Row from "./TickRow/Row";
+import { Container } from "../../../UI/Card/Card"
 
 const Why = (props) => {
   return (
     <div className={classes.container}>
+    <Container style={{flexDirection:"column"}}>
       <div>
         <Heading447 className={classes.headingTop}>Why Winbox?</Heading447>
         <Heading447 className={classes.heading}>
@@ -55,6 +57,7 @@ const Why = (props) => {
           <Row className={classes.row} content="Blog resources"/>
         </div>
       </Cont>
+      </Container>
     </div>
   );
 };
