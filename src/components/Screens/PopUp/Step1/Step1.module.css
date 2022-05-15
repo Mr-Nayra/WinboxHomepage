@@ -1,0 +1,33 @@
+.container{
+  height: 50vh;
+  overflow-y: scroll;
+  margin-right: -2vw;
+  padding-right: 2vw;
+}
+
+.flexend {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 1vh;
+  margin-top: 3vh;
+}
+
+.parah {
+  color: #737485;
+  font-size: 2.2vh;
+  margin-bottom: 2vh;
+
+}
+
+.headingparah {
+  font-size: 2.7vh;
+  color: #323c47;
+  margin: 2vh 0 1vh 0;
+  font-weight: 700;
+}
+
+.img{
+  width: 70%;
+  margin-bottom: 2vh;
+}

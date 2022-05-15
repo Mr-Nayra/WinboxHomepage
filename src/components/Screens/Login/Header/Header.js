@@ -5,7 +5,7 @@ import BlueButton from "../../../UI/BlueButton/Button";
 import { Container } from "../../../UI/Card/Card";
 
 const redirect = () => {
-  window.location.href = "https://app.getwinbox.co/login";
+  window.location.href = "https://app.getwinbox.co/";
 }
 
 const Header = (props) => {
@@ -14,7 +14,7 @@ const Header = (props) => {
       <Container>
         <Logo className={classes.logo} />
         <div className={classes.flex}>
-          <BlueButton href="#">
+          <BlueButton onClick={props.onClick} value={props.value}>
             Connect Your Inbox
           </BlueButton>
           <Button onClick={redirect} className={classes.button}>

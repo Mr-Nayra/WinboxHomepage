@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading{
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.numbersContainer{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.bar{
+  flex: 1;
+  height: 10px;
+}
