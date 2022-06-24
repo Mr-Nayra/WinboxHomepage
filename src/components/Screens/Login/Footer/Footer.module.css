@@ -50,3 +50,15 @@
 .copyrighttext {
   font-size: 2.8vh;
 }
+
+@media (max-width: 766px) {
+  .container{
+    padding: 2vh 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    padding: 2vh 20px;
+  }
+}

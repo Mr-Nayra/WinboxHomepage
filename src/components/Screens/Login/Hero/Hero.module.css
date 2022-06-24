@@ -1,8 +1,15 @@
-.container{
+.container {
   padding: 5vh 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: stretch;
 }
 
 .heroText {
@@ -16,32 +23,48 @@
   color: #0415aa;
 }
 
-.heading{
+.heading {
   font-weight: 500;
   font-size: 4vh;
   color: #323C47;
   padding-bottom: 1.5vh;
 }
 
-.gif{
+.gif {
   height: 70vh;
   width: auto;
 }
 
-.heroParah{
+.heroParah {
   font-size: 2.7vh;
   padding-bottom: 3vh;
   color: #707683;
 }
 
-.bluebutton{
+.bluebutton {
   font-size: 2.7vh;
   height: 7.5vh;
   width: 13.5vw;
 }
 
-.button{
+.button {
   font-size: 2.7vh;
   height: 7.5vh;
   width: 13.5vw;
+}
+
+@media (max-width: 766px) {
+  .container {
+    padding: 2vh 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2vh 20px;
+  }
+
+  .cont {
+    flex-direction: column;
+  }
 }

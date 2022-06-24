@@ -11,3 +11,15 @@
   border-radius: 10px;
   image-rendering: high-quality;
 }
+
+@media (max-width: 766px) {
+  .container{
+    padding: 2vh 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    padding: 2vh 20px;
+  }
+}

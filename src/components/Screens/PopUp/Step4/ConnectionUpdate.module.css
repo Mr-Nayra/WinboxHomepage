@@ -1,12 +1,16 @@
-.modalClass{
-  z-index: 40;
-  width:50vw;
-  height: 55vh;
-  padding: 1vh 1vw;
-  min-width: 400px;
-  min-height: 380px;
+.container{
+  margin: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.backdropClass{
-  z-index: 30;
+.heading{
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.gif{
+  height: 20vh;
 }

@@ -25,19 +25,17 @@ const Report = (props) => {
 
   return (
     <>
-    {showPopUp === "1" && (
-      <StepCont closePopUp={closePopUp}/>
-    )}
-    <div className={classes.container}>
-      <Header onClick={renderPopUp}/>
-      <Hero />
-      <Carousel />
-      <Significance />
-      <Working />
-      <Steps/>
-      <Why />
-      <Footer/>
-    </div>
+      {showPopUp === "1" && <StepCont closePopUp={closePopUp} />}
+      <div className={classes.container}>
+        <Header onClick={renderPopUp} />
+        <Hero />
+        <Carousel />
+        <Significance />
+        <Working />
+        <Steps />
+        <Why />
+        <Footer />
+      </div>
     </>
   );
 };

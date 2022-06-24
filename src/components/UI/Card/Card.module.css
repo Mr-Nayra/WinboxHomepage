@@ -5,9 +5,5 @@
 
 .container{
   max-width:1050px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-content: stretch;
   width: 100%;
 }

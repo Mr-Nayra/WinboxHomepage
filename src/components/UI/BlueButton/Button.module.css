@@ -18,3 +18,11 @@
   border-color: #041186;
   color: #041186;
 }
+
+@media (max-width: 766px) {
+  .bluebutton {
+    font-size: 10px;
+    height: 30px;
+    width: 120px;
+  }
+}

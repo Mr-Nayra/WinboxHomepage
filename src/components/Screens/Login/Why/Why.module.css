@@ -64,3 +64,15 @@
   height: 7.5vh;
   width: 13.5vw;
 }
+
+@media (max-width: 766px) {
+  .container{
+    padding: 2vh 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    padding: 2vh 20px;
+  }
+}
