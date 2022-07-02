@@ -1,4 +1,4 @@
-.container{
+.container {
   margin-top: 1vh;
   padding: 5vh 8vw;
   display: flex;
@@ -7,18 +7,18 @@
   justify-content: center;
 }
 
-.heading{
-  color: #0415aa;;
+.heading {
+  color: #0415aa;
   padding-bottom: 1vh;
   text-align: center;
 }
 
-.gif{
+.gif {
   height: 70vh;
   width: auto;
 }
 
-.headingparah{
+.headingparah {
   font-size: 2.7vh;
   padding-bottom: 2vh;
   color: #323C47;
@@ -26,7 +26,7 @@
   width: 80%;
 }
 
-.button{
+.button {
   font-size: 2.7vh;
   height: 7.5vh;
   width: 13.5vw;
@@ -37,6 +37,7 @@
   height: 100%;
   position: relative;
 }
+
 .videoPlayBtn {
   width: 100px;
   height: 70px;
@@ -45,25 +46,31 @@
   left: calc(50% - 45px);
   top: calc(50% - 95px);
   background: #000427d0;
-  text-align: center;
-  line-height: 70px;
-  font-size: 28px;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.al_video_image img {
+
+.img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.play{
+  width: 60%;
+  height: 70%;
+  opacity: 95%;
+}
+
 @media (max-width: 766px) {
-  .container{
+  .container {
     padding: 2vh 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 2vh 20px;
   }
 }

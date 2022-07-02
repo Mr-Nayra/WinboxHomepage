@@ -7,7 +7,7 @@ import { Container } from "../../../UI/Card/Card";
 const Hero = (props) => {
   return (
     <div className={classes.container}>
-      <Container style={{flexDirection:"column"}}>
+      <Container style={{ flexDirection: "column" }}>
         <Card className={classes.container}>
           <Heading447 className={classes.heading}>How does it work?</Heading447>
           <p className={classes.headingparah}>
@@ -19,16 +19,20 @@ const Hero = (props) => {
         <section class="al_video_section">
           <div class="container">
             <div className={classes.al_video_image}>
-            <img
-              src={require('./Laptop.png')}
-              alt="Laptop with winbox logo"
-              className={classes.gif}
-            />
+              <img
+                src={require("./Laptop.png")}
+                alt="Laptop with winbox logo"
+                className={classes.img}
+              />
               <a
                 className={classes.videoPlayBtn}
                 href="https://www.youtube.com/watch?v=N6Zg8Q-jKNI"
               >
-                <i classNAme={classes.fas}></i>
+                <img
+                  src={require("./playbtn.png")}
+                  alt="Laptop with winbox logo"
+                  className={classes.play}
+                />
               </a>
             </div>
           </div>
