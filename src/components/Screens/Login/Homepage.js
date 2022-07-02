@@ -29,12 +29,12 @@ const Report = (props) => {
       <div className={classes.container}>
         <Header onClick={renderPopUp} />
         <Hero />
-        {/* <Carousel />
+        <Carousel />
         <Significance />
         <Working />
         <Steps />
         <Why />
-        <Footer /> */}
+        <Footer />
       </div>
     </>
   );
