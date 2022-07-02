@@ -78,22 +78,22 @@
   }
 
   .heroTitle {
-    font-size: 4vh;
+    font-size: 4.5vh;
     padding-bottom: 1vh;
   }
 
   .heading {
-    font-size: 2vh;
+    font-size: 2.5vh;
     padding-bottom: 0.75vh;
   }
 
   .heroParah {
-    font-size: 1.35vh;
+    font-size: 1.5vh;
     padding-bottom: 1.5vh;
   }
 
   .button {
-    font-size: 2vh;
+    font-size: 1.5vh;
     height: 5vh;
     width: 35%;
   }
