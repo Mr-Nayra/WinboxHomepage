@@ -42,4 +42,7 @@
   .container{
     padding: 2vh 20px;
   }
+  .bluebutton{
+    visibility: hidden;
+  }
 }

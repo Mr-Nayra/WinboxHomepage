@@ -62,9 +62,45 @@
 @media (max-width: 480px) {
   .container {
     padding: 2vh 20px;
+    text-align: center;
   }
 
   .cont {
     flex-direction: column;
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+  }
+
+  .heroTitle {
+    font-size: 4vh;
+    padding-bottom: 1vh;
+  }
+
+  .heading {
+    font-size: 2vh;
+    padding-bottom: 0.75vh;
+  }
+
+  .heroParah {
+    font-size: 1.35vh;
+    padding-bottom: 1.5vh;
+  }
+
+  .button {
+    font-size: 2vh;
+    height: 5vh;
+    width: 35%;
+  }
+
+  .gif {
+    margin-top:5vh;
+    height: 35vh;
+    width: auto;
   }
 }

@@ -21,10 +21,7 @@ const Hero = (props) => {
             </Button>
           </div>
 
-          <div
-            className={`${classes.wow} ${classes.heroShape} ${classes.fadeInUp}`}
-            data-wow-delay="0.3s"
-          >
+          <div>
             <img
               src={require("./mail.gif")}
               alt="banner"

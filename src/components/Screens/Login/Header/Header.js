@@ -15,7 +15,7 @@ const Header = (props) => {
         <div className={classes.cont}>
           <Logo className={classes.logo} />
           <div className={classes.flex}>
-            <BlueButton onClick={props.onClick} value={props.value}>
+            <BlueButton onClick={props.onClick} value={props.value} className={classes.bluebutton}>
               Connect Your Inbox
             </BlueButton>
             <Button onClick={redirect} className={classes.button}>
