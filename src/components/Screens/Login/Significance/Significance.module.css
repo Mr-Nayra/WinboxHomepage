@@ -51,7 +51,7 @@
 
 .step {
   color: #737485;
-  font-size: 2vh;
+  font-size: 2.2vh;
   padding: 0.5vh 0;
 }
 
@@ -97,5 +97,30 @@
 @media (max-width: 480px) {
   .container{
     padding: 2vh 20px;
+  }
+
+  .headingparah {
+    font-size: 1.35vh;
+    padding-bottom: 1vh;
+    text-align: center;
+  }
+
+  .gif {
+    height: 35vh;
+  }
+
+  .headingparah {
+    font-size: 1.35vh;
+    padding-bottom: 1vh;
+  }
+
+  .step {
+    font-size: 1.1vh;
+    padding: 0.25vh 0;
+  }
+  
+  .stepb {
+    font-size: 1.1vh;
+    padding: 0.25vh 0;
   }
 }

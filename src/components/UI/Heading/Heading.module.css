@@ -26,3 +26,10 @@
   font-size: 5.5vh;
   color: #323c47;
 }
+
+@media (max-width: 480px) {
+  .heading447 {
+    font-size: 2.75vh;
+    line-height: 110%;
+  }
+}
