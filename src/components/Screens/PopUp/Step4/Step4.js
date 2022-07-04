@@ -4,6 +4,7 @@ import Button from "../../../UI/Button/Button";
 import Button2 from "../../../UI/BlueButton/Button";
 import Input from "../Elements/Input/Input";
 import SucessMessage, { ErrorMessage } from "./ConnectionUpdate";
+import url from "../../../../../util/url";
 
 const Step4 = (props) => {
   const [email, setEmail] = useState("");
@@ -28,25 +29,15 @@ const Step4 = (props) => {
   const check = () => {
     setLoader(1);
 
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    var request = new XMLHttpRequest();
 
-    var raw = JSON.stringify({
-      email: email,
-      password: password,
-    });
+    request.open("POST", url + "network/check_connection/");
 
-    var requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow",
-    };
+    request.setRequestHeader("Content-Type", "application/json");
 
-    fetch("http://44.203.4.229/result", requestOptions)
-      .then((response) => response.text())
-      .then((result) => {
-        if (JSON.parse(result).Status === "Success") {
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        if (JSON.parse(this.responseText).status === "success") {
           setSucess(1);
           setTimeout(closeConnectionPopUp, 3000);
         } else {
@@ -54,11 +45,15 @@ const Step4 = (props) => {
           setTimeout(setError.bind(this, 0), 3000);
           setLoader(0);
         }
-      })
-      .catch((error) => {
-        setTimeout(setError.bind(this, 0), 3000);
-        setLoader(0);
-      });
+      }
+    };
+
+    var body = JSON.stringify({
+      email: email,
+      password: password,
+    });
+
+    request.send(body);
   };
 
   return (
