@@ -4,7 +4,7 @@ import Button from "../../../UI/Button/Button";
 import Button2 from "../../../UI/BlueButton/Button";
 import Input from "../Elements/Input/Input";
 import SucessMessage, { ErrorMessage } from "./ConnectionUpdate";
-import url from "../../../../../util/url";
+import url from "../../../../util/url";
 
 const Step4 = (props) => {
   const [email, setEmail] = useState("");

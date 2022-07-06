@@ -44,6 +44,12 @@
   margin-top: 2vh;
 }
 
+.loadingparah {
+  font-size: 2.2vh;
+  color: #0415AA;
+  margin-left: 0.5vw;
+}
+
 .loading {
   display: inline-block;
   width: 30px;
@@ -53,12 +59,6 @@
   border-top-color: #fff;
   animation: spin 1s ease-in-out infinite;
   -webkit-animation: spin 1s ease-in-out infinite;
-}
-
-.loadingparah {
-  font-size: 2.2vh;
-  color: #0415AA;
-  margin-left: 0.5vw;
 }
 
 @keyframes spin {
