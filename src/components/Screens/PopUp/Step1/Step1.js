@@ -7,21 +7,26 @@ const Step1 = (props) => {
   return (
     <>
       <div className={classes.container}>
-        <h3 className={classes.headingparah}>
-          Allow Less Secure Apps on your mailbox
-        </h3>
-        <p className={classes.parah}>
-          To allow less secure apps{" "}
-          <a href="https://myaccount.google.com/lesssecureapps">Click here</a>
+        <h3 className={classes.headingparah}>Turn on 2 step verification</h3>
+        <p className={classes.parah} style={{ marginBottom: "1vh" }}>
+          Go to this link{" "}
+          <a href="https://myaccount.google.com/security" target="_blank">
+            Click here
+          </a>
         </p>
-        <img
-          src={require("./Step1.png")}
-          alt="Allow Less Secure Apps on your mailbox"
-          className={classes.img}
-        />
+        <p className={classes.parah}>
+          {" "}
+          And Turn on 2 step verification under Signing in to google
+        </p>
       </div>
       <div className={classes.flexend}>
-        <Button className={classes.btn} onClick={props.onClick} value={props.next}>Next</Button>
+        <Button
+          className={classes.btn}
+          onClick={props.onClick}
+          value={props.next}
+        >
+          Next
+        </Button>
       </div>
     </>
   );

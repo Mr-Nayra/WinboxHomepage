@@ -37,6 +37,7 @@ const Step4 = (props) => {
 
     request.onreadystatechange = function () {
       if (this.readyState === 4) {
+        console.log(this.responseText);
         if (JSON.parse(this.responseText).status === "success") {
           setSucess(1);
           setTimeout(closeConnectionPopUp, 3000);
@@ -61,7 +62,15 @@ const Step4 = (props) => {
       {sucess == 1 && <SucessMessage />}
       {error == 1 && <ErrorMessage />}
       <div className={classes.container}>
-        <h3 className={classes.headingparah}>Check Connection</h3>
+        <p className={classes.parah} style={{ marginBottom: "1vh" }}>
+          Just type your email in the username field and copy the app password
+          which you created earlier in the password field.
+        </p>
+        <p className={classes.parah}>
+          Click submit if you did everything right you will get a successful
+          connection message or you may need to make sure that you followed all
+          the steps correctly.
+        </p>
         <Input required={true} value={email} onChange={emailChangeHandler}>
           Email
         </Input>
@@ -83,7 +92,7 @@ const Step4 = (props) => {
           </Button>
         )}
         {error == 1 && (
-          <p className={classes.parah}>
+          <p className={classes.error}>
             Oops! Something went wrong, kindly make sure that you followed all
             the steps correctly
           </p>

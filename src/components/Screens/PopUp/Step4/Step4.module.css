@@ -23,6 +23,12 @@
 }
 
 .parah {
+  color: #737485;
+  font-size: 2.2vh;
+  margin-bottom: 2vh;
+}
+
+.error {
   color: #ea4c46;
   font-size: 2.2vh;
   margin-top: 2vh

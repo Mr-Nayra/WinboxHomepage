@@ -7,11 +7,17 @@ const Step3 = (props) => {
   return (
     <>
       <div className={classes.container}>
-        <h3 className={classes.headingparah}>Optional - if the first 2 steps do not work</h3>
-          <p className={classes.parah}>
-            Please{" "}
-            <a href="https://g.co/allowaccess">Click here</a>
-          </p>
+        <h3 className={classes.headingparah}>Enable IMAP</h3>
+        <p className={classes.parah} style={{ marginBottom: "0.5vh" }}>
+          Go to this link{" "}
+          <a
+            href="https://mail.google.com/mail/u/0/#settings/fwdandpop"
+            target="_blank"
+          >
+            Click here
+          </a>
+        </p>
+        <p className={classes.parah}>And enable the IMAP access setting.</p>
         <img
           src={require("./Step3.png")}
           alt="Laptop with winbox logo"
@@ -19,8 +25,20 @@ const Step3 = (props) => {
         />
       </div>
       <div className={classes.flexside}>
-        <Button2 className={classes.btn} onClick={props.onClick} value={props.prev}>Back</Button2>
-        <Button className={classes.btn} onClick={props.onClick} value={props.next}>Next</Button>
+        <Button2
+          className={classes.btn}
+          onClick={props.onClick}
+          value={props.prev}
+        >
+          Back
+        </Button2>
+        <Button
+          className={classes.btn}
+          onClick={props.onClick}
+          value={props.next}
+        >
+          Next
+        </Button>
       </div>
     </>
   );
