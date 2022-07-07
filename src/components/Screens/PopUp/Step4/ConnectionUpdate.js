@@ -2,31 +2,17 @@ import classes from "./ConnectionUpdate.module.css";
 import Modal from "../../../UI/Modal/Modal";
 import { Heading186 } from "../../../UI/Heading/Heading";
 import success from "./success.gif";
+import error from "./error.gif";
 
-const SucessMessage = () => {
+const Message = (props) => {
   return (
     <Modal modalClass={classes.modal} backdropClass={classes.backdropClass}>
       <div className={classes.container}>
-        <img src={success} className={classes.gif} />
-        <Heading186 className={classes.heading}>
-          Connection Successfull
-        </Heading186>
+        <img src={props.error ? error : success} className={classes.gif} />
+        <Heading186 className={classes.heading}>{props.parah}</Heading186>
       </div>
     </Modal>
   );
 };
 
-export const ErrorMessage = () => {
-  return (
-    <Modal modalClass={classes.modal} backdropClass={classes.backdropClass}>
-      <div className={classes.container}>
-        <img src={success} className={classes.gif} />
-        <Heading186 className={classes.heading}>
-          Oops!...Something went wrong
-        </Heading186>
-      </div>
-    </Modal>
-  );
-};
-
-export default SucessMessage;
+export default Message;

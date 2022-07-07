@@ -11,6 +11,7 @@ const Link = (props) => {
         className={`${props.className}  ${classes.input} `}
         placeholder={props.children}
         value={props.value}
+        type={props.type}
         onChange={props.onChange}
       />
     </div>

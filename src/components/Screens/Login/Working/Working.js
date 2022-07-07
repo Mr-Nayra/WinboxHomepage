@@ -26,7 +26,7 @@ const Hero = (props) => {
               />
               <a
                 className={classes.videoPlayBtn}
-                href="https://www.youtube.com/watch?v=N6Zg8Q-jKNI"
+                href="#"
               >
                 <img
                   src={require("./playbtn.png")}

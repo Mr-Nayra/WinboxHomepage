@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import classes from "./Step4.module.css";
 import Button from "../../../UI/Button/Button";
 import Button2 from "../../../UI/BlueButton/Button";
-import Input from "../Elements/Input/Input";
-import SucessMessage, { ErrorMessage } from "./ConnectionUpdate";
+import Input from "../../../Elements/Input/Input";
+import Message from "./ConnectionUpdate";
 import url from "../../../../util/url";
 
 const Step4 = (props) => {
@@ -11,6 +11,7 @@ const Step4 = (props) => {
   const [password, setPassword] = useState("");
   const [loader, setLoader] = React.useState(0);
   const [error, setError] = React.useState(0);
+  const [exists, setExists] = React.useState(0);
   const [sucess, setSucess] = React.useState(0);
 
   const closeConnectionPopUp = () => {
@@ -29,38 +30,49 @@ const Step4 = (props) => {
   const check = () => {
     setLoader(1);
 
-    var request = new XMLHttpRequest();
+    var formdata = new FormData();
+    formdata.append("username", email);
+    formdata.append("password", password);
 
-    request.open("POST", url + "network/check_connection/");
+    var requestOptions = {
+      method: "POST",
+      body: formdata,
+      redirect: "follow",
+    };
 
-    request.setRequestHeader("Content-Type", "application/json");
-
-    request.onreadystatechange = function () {
-      if (this.readyState === 4) {
-        console.log(this.responseText);
-        if (JSON.parse(this.responseText).status === "success") {
+    fetch(url + "/network/check_connection/", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        if (JSON.parse(result).status === "success") {
           setSucess(1);
+          setTimeout(closeConnectionPopUp, 3000);
+        } else if (JSON.parse(result).status === "exist") {
+          setExists(1);
           setTimeout(closeConnectionPopUp, 3000);
         } else {
           setError(1);
           setTimeout(setError.bind(this, 0), 3000);
           setLoader(0);
         }
-      }
-    };
-
-    var body = JSON.stringify({
-      email: email,
-      password: password,
-    });
-
-    request.send(body);
+      })
+      .catch(() => {
+        setError(1);
+        setTimeout(setError.bind(this, 0), 3000);
+        setLoader(0);
+      });
   };
 
   return (
     <>
-      {sucess == 1 && <SucessMessage />}
-      {error == 1 && <ErrorMessage />}
+      {sucess === 1 && <Message parah="Connection Successfull"></Message>}
+      {exists === 1 && <Message parah="This email already exists"></Message>}
+      {error === 1 && (
+        <Message
+          parah="Oops! Something went wrong, kindly make sure that you followed all the
+        steps correctly"
+          error
+        ></Message>
+      )}
       <div className={classes.container}>
         <p className={classes.parah} style={{ marginBottom: "1vh" }}>
           Just type your email in the username field and copy the app password
@@ -77,6 +89,7 @@ const Step4 = (props) => {
         <Input
           required={true}
           value={password}
+          type="password"
           onChange={passwordChangeHandler}
         >
           Password
@@ -90,12 +103,6 @@ const Step4 = (props) => {
           <Button className={classes.btn2} onClick={check}>
             Check Connection
           </Button>
-        )}
-        {error == 1 && (
-          <p className={classes.error}>
-            Oops! Something went wrong, kindly make sure that you followed all
-            the steps correctly
-          </p>
         )}
       </div>
       <div className={classes.flexside}>
