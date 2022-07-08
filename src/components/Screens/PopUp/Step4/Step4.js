@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import classes from "./Step4.module.css";
 import Button from "../../../UI/Button/Button";
 import Button2 from "../../../UI/BlueButton/Button";
@@ -74,7 +74,7 @@ const Step4 = (props) => {
         ></Message>
       )}
       <div className={classes.container}>
-        <p className={classes.parah} style={{ marginBottom: "1vh" }}>
+        <p className={classes.parah}>
           Just type your email in the username field and copy the app password
           which you created earlier in the password field.
         </p>
