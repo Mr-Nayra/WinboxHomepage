@@ -2,7 +2,6 @@ import React from "react";
 
 import classes from "./Button.module.css";
 
-
 const Button = (props) => {
   return (
     <button
@@ -14,6 +13,17 @@ const Button = (props) => {
     >
       {props.children}
     </button>
+  );
+};
+
+export const Link = (props) => {
+  return (
+    <a
+      className={`${props.className}  ${classes.button} `}
+      href={props.href}
+    >
+      {props.children}
+    </a>
   );
 };
 

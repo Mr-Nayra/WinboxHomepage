@@ -1,5 +1,5 @@
 .container {
-  padding: 0 8vw;
+  padding: 8vh 8vw;
   background-color: #0415aa;
   color: #fff;
   border-bottom: 1px solid #fff;
@@ -15,7 +15,6 @@
 }
 
 .logo {
-  margin-top: 8vh;
   height: 10vh;
   width: 133px;
 }
@@ -23,8 +22,28 @@
 .parah {
   font-size: 2.8vh;
   font-weight: 400;
-  margin: 4vh 0 10vh 0;
-  width: 40%;
+  margin: 4vh 0 0 0;
+}
+
+.linkcont {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkheading {
+  color: white;
+  margin-bottom: 1vh;
+}
+
+.link {
+  color: white;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 80%;
 }
 
 .links {
@@ -52,13 +71,13 @@
 }
 
 @media (max-width: 766px) {
-  .container{
+  .container {
     padding: 2vh 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 2vh 20px;
   }
 }

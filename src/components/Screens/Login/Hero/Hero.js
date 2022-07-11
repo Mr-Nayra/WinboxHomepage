@@ -1,5 +1,5 @@
 import classes from "./Hero.module.css";
-import Button from "../../../UI/Button/Button";
+import Button, { Link } from "../../../UI/Button/Button";
 import { Container } from "../../../UI/Card/Card";
 
 const Hero = (props) => {
@@ -16,9 +16,9 @@ const Hero = (props) => {
               Reach your leads with Winbox, the tool that raises your inbox
               reputation & increases your email deliverability.
             </p>
-            <Button href="#" className={classes.button}>
+            <Link href="https://app.getwinbox.co/" className={classes.button}>
               Warm my inbox
-            </Button>
+            </Link>
           </div>
 
           <div>

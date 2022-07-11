@@ -1,0 +1,23 @@
+.container {
+    padding: 5vh 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parah {
+    font-size: 2.7vh;
+    padding-bottom: 3vh;
+    color: #707683;
+}
+
+.heading {
+    margin-bottom: 2vh;
+}
+
+.headingTop {
+    font-weight: 700;
+    font-size: 7vh;
+    color: #323c47;
+    margin-bottom: 2vh;
+}

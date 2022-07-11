@@ -1,6 +1,6 @@
 .container {
   margin-top: 1vh;
-  padding: 5vh 8vw;
+  padding: 5vh 8vw 0vh 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,7 @@
 .al_video_image {
   width: 100%;
   height: 100%;
+  margin-bottom: -5%;
   position: relative;
 }
 
@@ -57,7 +58,7 @@
   object-fit: cover;
 }
 
-.play{
+.play {
   width: 60%;
   height: 65%;
   opacity: 95%;

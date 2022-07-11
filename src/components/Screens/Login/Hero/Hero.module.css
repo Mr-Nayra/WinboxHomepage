@@ -43,16 +43,11 @@
   color: #707683;
 }
 
-.bluebutton {
-  font-size: 2.7vh;
-  height: 7.5vh;
-  width: 13.5vw;
-}
-
 .button {
   font-size: 2.7vh;
   height: 7.5vh;
   width: 13.5vw;
+  text-decoration: none;
 }
 
 @media (max-width: 766px) {
