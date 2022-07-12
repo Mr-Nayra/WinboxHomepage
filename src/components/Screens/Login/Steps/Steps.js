@@ -59,6 +59,7 @@ const Steps = (props) => {
           heading="Monitor your new great deliverability results with detailed reports"
           parah="Connect your inbox from any email provider (Gmail - GSuite OAuth, Outlook 365, Yahoo Mail, Amazon SES, SMTP, etc.)"
           link="Start warming up your inbox now"
+          href="https://app.getwinbox.co/login"
         >
           <img
             src={require("./Icons/4.png")}

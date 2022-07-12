@@ -35,18 +35,7 @@ const Footer = (props) => {
               emails deliverability.
             </p>
           </div>
-          <div className={classes.linkcont}>
-            <Heading186 className={classes.linkheading}>About Us</Heading186>
-            <Link to="/home" className={classes.link}>
-              Homepage
-            </Link>
-            <Link to="/privacy-policy" className={classes.link}>
-              Privacy Policy
-            </Link>
-            <Link to="/terms-conditions" className={classes.link}>
-              Terms And Conditions
-            </Link>
-          </div>
+          <div className={classes.linkcont}></div>
           {/*<div className={classes.links}>
           <a>
             <FacebookIcon />
@@ -67,7 +56,15 @@ const Footer = (props) => {
         </Container>
       </div>
       <div className={classes.container2}>
-        <p className={classes.copyrighttext}>
+        <div>
+          <Link to="/privacy-policy" className={classes.link}>
+            Privacy Policy
+          </Link>{" "}|{" "}
+          <Link to="/terms-conditions" className={classes.link}>
+            Terms And Conditions
+          </Link>
+        </div>
+        <p className={classes.link}>
           © Copyright 2022 | All rights reserved by Winbox
         </p>
       </div>

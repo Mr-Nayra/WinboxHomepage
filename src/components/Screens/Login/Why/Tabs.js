@@ -54,7 +54,7 @@ const Tabs = () => {
         )}
         {tab === "3" && (
           <img
-            src={require("./Icons/3.png")}
+            src={require("./Icons/3.jpeg")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />

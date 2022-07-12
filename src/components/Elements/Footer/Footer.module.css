@@ -6,12 +6,12 @@
 }
 
 .container2 {
-  padding: 2vh 5.8vw;
+  padding: 2vh 8vw;
   background-color: #0415aa;
   color: #fff;
   border-bottom: 1px solid #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logo {
