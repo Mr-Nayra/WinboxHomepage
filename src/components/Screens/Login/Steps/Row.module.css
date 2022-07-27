@@ -4,6 +4,11 @@
   justify-content: space-between;
 }
 
+.imageCont {
+  display: flex;
+  justify-content: center;
+}
+
 .details {
   flex: 0 0 45%;
   display: flex;
@@ -20,7 +25,7 @@
   font-weight: 700;
   font-size: 9vh;
   color: #0415aa;
-  padding: 1vh 1vw 0 0;
+  padding: 1vh 1vw 0 0
 }
 
 .parah {
@@ -59,8 +64,8 @@
     font-size: 1.3vh;
   }
 
-  .details {
-    order: 2
+  .imageCont {
+    order: 2;
   }
 
   .stepnumber {
