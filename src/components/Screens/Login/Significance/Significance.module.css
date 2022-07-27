@@ -89,13 +89,13 @@
 }
 
 @media (max-width: 766px) {
-  .container{
+  .container {
     padding: 2vh 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 2vh 20px;
   }
 
@@ -103,6 +103,14 @@
     font-size: 1.35vh;
     padding-bottom: 1vh;
     text-align: center;
+  }
+
+  .con {
+    flex-direction: column;
+  }
+
+  .details {
+    order: 1;
   }
 
   .gif {
@@ -118,7 +126,7 @@
     font-size: 1.1vh;
     padding: 0.25vh 0;
   }
-  
+
   .stepb {
     font-size: 1.1vh;
     padding: 0.25vh 0;

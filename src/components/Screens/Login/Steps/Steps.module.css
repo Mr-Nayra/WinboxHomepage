@@ -1,25 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
 .container {
-  padding: 8vh 8vw;
+  padding: 8vh 60px;
   background: #f5f6ff;
 }
 
 .img {
-  width: 500px;
+  width: 80%;
   height: auto;
-  border-radius: 10px;
-  image-rendering: high-quality;
 }
 
 @media (max-width: 766px) {
-  .container{
+  .container {
     padding: 2vh 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 2vh 20px;
   }
 }

@@ -12,7 +12,9 @@ export const Row2 = (props) => {
         <div className={classes.cont}>
           <Heading327>{props.heading}</Heading327>
           <p className={classes.parah}>{props.parah}</p>
-          <a className={classes.link} href={props.href}>{props.link}</a>
+          <a className={classes.link} href={props.href}>
+            {props.link}
+          </a>
         </div>
       </div>
     </div>
@@ -29,10 +31,14 @@ const Row = (props) => {
         <div className={classes.cont}>
           <Heading327>{props.heading}</Heading327>
           <p className={classes.parah}>{props.parah}</p>
-          <a className={classes.link} href={props.href}>{props.link}</a>
+          <a className={classes.link} href={props.href}>
+            {props.link}
+          </a>
         </div>
       </div>
-      <div>{props.children}</div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {props.children}
+      </div>
     </div>
   );
 };

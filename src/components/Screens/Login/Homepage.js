@@ -7,7 +7,6 @@ import Working from "./Working/Working";
 import Carousel from "./Carousel/Carousel";
 import Why from "./Why/Why";
 import Steps from "./Steps/Steps";
-import StepCont from "../PopUp/Steps";
 
 const Report = (props) => {
   return (

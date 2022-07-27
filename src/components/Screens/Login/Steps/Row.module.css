@@ -1,27 +1,26 @@
-.container{
-    margin: 3vh 5.8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.details{
+.details {
   flex: 0 0 45%;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
-.cont{
+.cont {
   margin-top: 2vh;
 }
 
 .stepnumber {
-  font-family: 'Lato' , sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 9vh;
   color: #0415aa;
-  padding:1vh 1vw 0 0;
+  padding: 1vh 1vw 0 0;
 }
 
 .parah {
@@ -30,13 +29,30 @@
   padding: 2vh 0;
 }
 
-.link{
+.link {
   color: #0415aa;
   font-size: 2.7vh;
   padding-top: 1vh;
 }
 
-.link:hover{
-  color:#041186;
+.link:hover {
+  color: #041186;
   cursor: pointer;
+}
+
+
+@media (max-width: 766px) {}
+
+@media (max-width: 480px) {
+  .parah {
+    font-size: 1.1vh;
+  }
+
+  .link {
+    font-size: 1.3vh;
+  }
+
+  .stepnumber {
+    font-size: 4.5vh
+  }
 }

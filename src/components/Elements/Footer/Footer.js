@@ -16,20 +16,19 @@ const Footer = (props) => {
       <div className={classes.container}>
         <Container
           style={{
-            display: "block",
             display: "flex",
             justifyContent: "flex-start",
           }}
         >
-          <div style={{ width: "40%" }}>
-            <a>
+          <div className={classes.cont1}>
+            <Link to="/home">
               <Logo
                 className={classes.logo}
                 color="#fff"
                 height="10vh"
                 width="12.5vw"
               />
-            </a>
+            </Link>
             <p className={classes.parah}>
               We help businesses to reach their leads by increasing their cold
               emails deliverability.
@@ -59,7 +58,8 @@ const Footer = (props) => {
         <div>
           <Link to="/privacy-policy" className={classes.link}>
             Privacy Policy
-          </Link>{" "}|{" "}
+          </Link>{" "}
+          |{" "}
           <Link to="/terms-conditions" className={classes.link}>
             Terms And Conditions
           </Link>

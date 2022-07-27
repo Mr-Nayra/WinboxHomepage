@@ -5,6 +5,10 @@
   border-bottom: 1px solid #fff;
 }
 
+.cont1 {
+  width: "40%"
+}
+
 .container2 {
   padding: 2vh 8vw;
   background-color: #0415aa;
@@ -74,10 +78,28 @@
   .container {
     padding: 2vh 40px;
   }
+
+  .parah {
+    font-size: 1.5vh;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 2vh 20px;
+  }
+
+  .cont1 {
+    width: 100%;
+  }
+
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container2 div {
+    margin-bottom: 1vh;
   }
 }
