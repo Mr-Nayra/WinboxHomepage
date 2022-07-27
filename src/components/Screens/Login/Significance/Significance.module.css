@@ -110,6 +110,10 @@
   }
 
   .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     order: 1;
   }
@@ -119,12 +123,12 @@
   }
 
   .headingparah {
-    font-size: 1.35vh;
+    font-size: 1.5vh;
     padding-bottom: 1vh;
   }
 
   .step {
-    font-size: 1.1vh;
+    font-size: 1.4vh;
     padding: 0.25vh 0;
   }
 

@@ -30,10 +30,12 @@ const Significance = (props) => {
             />
           </div>
           <div className={classes.details}>
-            <Heading327 className={classes.headingred}>Without </Heading327>
-            <Heading327 className={classes.headingnormal}>
-              email warm-up.
-            </Heading327>
+            <div>
+              <Heading327 className={classes.headingred}>Without </Heading327>
+              <Heading327 className={classes.headingnormal}>
+                email warm-up.
+              </Heading327>
+            </div>
             <p className={classes.headingparah}>
               Cold emailing campaigns for sales or marketing purposes without a
               warm-up period can jeopardise your sender reputation and

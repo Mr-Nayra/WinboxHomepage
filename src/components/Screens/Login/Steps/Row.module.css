@@ -31,6 +31,8 @@
 
 .link {
   color: #0415aa;
+  text-decoration: none;
+  border-bottom: 2px solid #0415aa;
   font-size: 2.7vh;
   padding-top: 1vh;
 }
@@ -38,12 +40,17 @@
 .link:hover {
   color: #041186;
   cursor: pointer;
+  border-color: #041186;
 }
 
 
 @media (max-width: 766px) {}
 
 @media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+
   .parah {
     font-size: 1.1vh;
   }
