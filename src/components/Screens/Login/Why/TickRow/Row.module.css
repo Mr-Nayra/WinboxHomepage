@@ -15,9 +15,15 @@
   color: #323c47;
 }
 
-.flex{
+.flex {
   display: flex !important;
   align-items: center;
   justify-content: flex-start;
-  flex-direction:row;
+  flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  .parah {
+    font-size: 1.06vh;
+  }
 }

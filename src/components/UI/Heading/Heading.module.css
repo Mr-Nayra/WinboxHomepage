@@ -15,6 +15,7 @@
   font-size: 3.76vh;
   color: #323c47;
 }
+
 .heading327 {
   font-weight: 700;
   font-size: 3.76vh;
@@ -31,5 +32,9 @@
   .heading447 {
     font-size: 2.75vh;
     line-height: 110%;
+  }
+
+  .heading327 {
+    font-size: 1.9vh;
   }
 }

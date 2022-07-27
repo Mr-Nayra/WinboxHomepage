@@ -26,6 +26,8 @@
 .tickRowCont {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .flexcol {
