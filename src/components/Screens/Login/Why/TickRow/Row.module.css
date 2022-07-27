@@ -26,4 +26,9 @@
   .parah {
     font-size: 1.06vh;
   }
+
+  .domain {
+    width: 48%;
+    margin-right: 2%;
+  }
 }

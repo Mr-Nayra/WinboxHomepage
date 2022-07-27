@@ -4,7 +4,9 @@ import { Heading327 } from "../../../UI/Heading/Heading";
 export const Row2 = (props) => {
   return (
     <div className={classes.container}>
-      <div>{props.children}</div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {props.children}
+      </div>
       <div className={classes.details}>
         <div>
           <h1 className={classes.stepnumber}>{props.stepnumber}</h1>
