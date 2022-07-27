@@ -2,7 +2,7 @@ import classes from "./Heading.module.css";
 
 export const Heading145 = (props) => {
   return (
-    <h3 className={`${props.className}  ${classes.heading} `}>
+    <h3 className={`${props.className} ${classes.heading} `}>
       {props.children}
     </h3>
   );
@@ -10,7 +10,7 @@ export const Heading145 = (props) => {
 
 export const Heading186 = (props) => {
   return (
-    <h3 className={`  ${classes.heading186} ${props.className}`}>
+    <h3 className={`${props.className} ${classes.heading186} `}>
       {props.children}
     </h3>
   );
@@ -18,14 +18,14 @@ export const Heading186 = (props) => {
 
 export const Heading327 = (props) => {
   return (
-    <h3 className={`  ${classes.heading327} ${props.className}`}>
+    <h3 className={`${props.className} ${classes.heading327} `}>
       {props.children}
     </h3>
   );
 };
 export const Heading326 = (props) => {
   return (
-    <h3 className={`  ${classes.heading326} ${props.className}`}>
+    <h3 className={`${props.className} ${classes.heading326}`}>
       {props.children}
     </h3>
   );
@@ -33,7 +33,7 @@ export const Heading326 = (props) => {
 
 export const Heading447 = (props) => {
   return (
-    <h3 className={`  ${classes.heading447} ${props.className}`}>
+    <h3 className={`${props.className} ${classes.heading447}`}>
       {props.children}
     </h3>
   );

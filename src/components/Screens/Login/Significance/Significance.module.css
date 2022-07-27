@@ -34,13 +34,13 @@
 
 .headingred {
   display: inline;
-  color: #ed2f2f;
+  color: #ed2f2f !important;
   margin-bottom: 1vh;
 }
 
 .headingblue {
   display: inline;
-  color: #0415aa;
+  color: #0415aa !important;
   margin-bottom: 1vh;
 }
 

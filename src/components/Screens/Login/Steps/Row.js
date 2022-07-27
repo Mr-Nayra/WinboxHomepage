@@ -4,7 +4,7 @@ import { Heading327 } from "../../../UI/Heading/Heading";
 export const Row2 = (props) => {
   return (
     <div className={classes.container}>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className={classes.imageCont}>
         {props.children}
       </div>
       <div className={classes.details}>
@@ -38,7 +38,7 @@ const Row = (props) => {
           </a>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div className={classes.imageCont}>
         {props.children}
       </div>
     </div>
