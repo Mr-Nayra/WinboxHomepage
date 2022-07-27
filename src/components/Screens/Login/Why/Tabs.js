@@ -14,6 +14,14 @@ const Tabs = () => {
 
   return (
     <Card className={classes.block}>
+      <div class={classes.dropdown}>
+        <button class={classes.dropbtn}>Dropdown</button>
+        <div class={classes.dropdownContent}>
+          <button value="1" onClick={changeTab}>Add Multiple inbox</button>
+          <button value="2" onClick={changeTab}>Plug & play setup</button>
+          <button value="3" onClick={changeTab}>Dashboard & monitoring</button>
+        </div>
+      </div>
       <div className={classes.buttons}>
         {tab === "1" ? (
           <Button>Add Multiple inbox</Button>
