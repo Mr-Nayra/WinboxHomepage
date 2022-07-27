@@ -1,10 +1,10 @@
-.div{
+.div {
   background: #FFFFFF;
   border-radius: 12px;
   height: 20vh;
 }
 
-.background{
+.background {
   height: 100vh;
   width: 100vw;
   background-color: grey;
@@ -19,13 +19,21 @@
   justify-content: center;
 }
 
-.container{
+.container {
   box-shadow: 20px 30px 100px rgb(0 13 125 / 16%);
   border-radius: 12px;
   margin-top: 4vh;
 }
 
-.img{
+.img {
   height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  .card {
+    height: 16vh;
+    width: 23%;
+    padding: 3vh 0;
+  }
 }

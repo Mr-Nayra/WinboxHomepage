@@ -17,7 +17,17 @@ const Header = (props) => {
           <Link to="/home">
             <Logo className={classes.logo} />
           </Link>
-          <div className={classes.flex}>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              <p style={{ transform: "rotate(90deg)" }}>></p>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          {/* <div className={classes.flex}>
             <BlueButton
               onClick={props.onClick}
               value={props.value}
@@ -27,8 +37,8 @@ const Header = (props) => {
             </BlueButton>
             <Button onClick={redirect} className={classes.button}>
               Get Started
-            </Button>
-          </div>
+            </Button> 
+          </div>*/}
         </div>
       </Container>
     </div>

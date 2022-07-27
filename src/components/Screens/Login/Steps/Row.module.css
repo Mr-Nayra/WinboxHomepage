@@ -57,7 +57,8 @@
   }
 
   .parah {
-    font-size: 1.1vh;
+    padding: 0.5vh 0;
+    font-size: 1.3vh;
   }
 
   .link {
@@ -66,6 +67,7 @@
 
   .imageCont {
     order: 2;
+    margin: 1vh 2vh;
   }
 
   .stepnumber {
