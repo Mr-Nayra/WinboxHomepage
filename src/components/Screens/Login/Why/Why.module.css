@@ -83,8 +83,17 @@
     padding: 2vh 20px;
   }
 
+  .heading {
+    line-height: 110%;
+  }
+
+  .headingTop {
+    line-height: 110%;
+  }
+
   .block {
     flex-direction: column;
+    margin: 2vh 0;
   }
 
   .tickRowCont {

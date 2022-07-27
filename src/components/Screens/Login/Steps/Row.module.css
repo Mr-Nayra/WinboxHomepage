@@ -59,6 +59,10 @@
     font-size: 1.3vh;
   }
 
+  .details {
+    order: 1
+  }
+
   .stepnumber {
     font-size: 4.5vh
   }
