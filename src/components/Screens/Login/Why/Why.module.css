@@ -1,4 +1,4 @@
-.container{
+.container {
   padding: 5vh 8vw;
   display: flex;
   flex-direction: column;
@@ -6,73 +6,86 @@
   justify-content: center;
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
   margin: 4vh 0;
 }
 
-.block{
+.block {
   width: 100%;
   margin: 4vh 0;
-  padding: 6vh 3vw;;
+  padding: 6vh 3vw;
   box-shadow: 15px 15px 50px rgb(4 21 170 / 16%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.flexcol{
+.tickRowCont {
   display: flex;
   flex-direction: column;
 }
 
-.heading{
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
   color: #0415aa;
   padding-bottom: 1vh;
   text-align: center;
 }
 
-.headingTop{
+.headingTop {
   text-align: center;
 }
 
-.head{
+.head {
   margin-bottom: 2vh;
   color: #0415aa;
 }
 
-.gif{
+.gif {
   height: 70vh;
   width: auto;
 }
 
-.headingparah{
+.headingparah {
   font-size: 2.7vh;
   padding-bottom: 2vh;
   text-align: center;
   color: #323C47;
 }
 
-.lastCard{
+.lastCard {
   margin-right: 0 !important;
 }
 
-.button{
+.button {
   font-size: 2.7vh;
   height: 7.5vh;
   width: 13.5vw;
 }
 
 @media (max-width: 766px) {
-  .container{
+  .container {
     padding: 2vh 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .container{
+  .container {
     padding: 2vh 20px;
+  }
+
+  .block {
+    flex-direction: column;
+  }
+
+  .tickRowCont {
+    flex-direction: row;
   }
 }

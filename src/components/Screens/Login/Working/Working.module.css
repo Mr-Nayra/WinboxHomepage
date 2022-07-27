@@ -40,12 +40,12 @@
 }
 
 .videoPlayBtn {
-  width: 100px;
-  height: 70px;
+  width: 10%;
+  height: 10%;
   border-radius: 10px;
   position: absolute;
-  left: calc(50% - 45px);
-  top: calc(50% - 95px);
+  left: calc(48%);
+  top: calc(38%);
   background: #000427d0;
   display: flex;
   align-items: center;
@@ -73,5 +73,9 @@
 @media (max-width: 480px) {
   .container {
     padding: 2vh 20px;
+  }
+
+  .headingparah {
+    font-size: 1.3vh;
   }
 }
