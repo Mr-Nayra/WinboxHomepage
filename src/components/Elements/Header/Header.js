@@ -4,12 +4,19 @@ import Button from "../../UI/Button/Button";
 import BlueButton from "../../UI/BlueButton/Button";
 import { Container } from "../../UI/Card/Card";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const redirect = () => {
   window.location.href = "https://app.getwinbox.co/";
 };
 
 const Header = (props) => {
+  const [show, setShow] = useState(false);
+
+  const openBox = () => {
+    setShow((prev) => !prev);
+  };
+
   return (
     <div className={classes.container}>
       <Container>
@@ -18,15 +25,23 @@ const Header = (props) => {
             <Logo className={classes.logo} />
           </Link>
           <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">
-              <p style={{ transform: "rotate(90deg)" }}>></p>
+            <button className={classes.dropButton} onClick={openBox}>
+              <p
+                style={{ transform: show ? "rotate(-90deg)" : "rotate(90deg)" }}
+              >
+                &gt;
+              </p>
             </button>
-            <div class="dropdown-content" id="myDropdown">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+            {show && (
+              <div className={classes.dropdownContent}>
+                <button onClick={props.onClick} value={props.value}>
+                  Join Our Network
+                </button>
+                <button onClick={redirect}>Get Started</button>
+              </div>
+            )}
           </div>
+
           {/* <div className={classes.flex}>
             <BlueButton
               onClick={props.onClick}
