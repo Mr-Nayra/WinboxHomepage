@@ -11,7 +11,7 @@
 }
 
 .card {
-  height: 20vh;
+  height: 100%;
   width: 20vw;
   padding: 5vh 0;
   display: flex;
@@ -32,8 +32,7 @@
 
 @media (max-width: 480px) {
   .card {
-    height: 6vh;
-    padding: 2vh 0;
+    padding: 3vh 0;
   }
 
   .div {

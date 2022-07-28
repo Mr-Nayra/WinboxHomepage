@@ -16,7 +16,7 @@
 
 .owl-prev:hover {
   background-color: #0415aa !important;
-  color:white !important;
+  color: white !important;
 }
 
 .owl-prev {
@@ -25,4 +25,16 @@
 
 .owl-next {
   right: -2vw;
+}
+
+.owl-stage {
+  height: 100%;
+}
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+.owl-item {
+  height: 100%;
 }
