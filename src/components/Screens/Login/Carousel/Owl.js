@@ -18,8 +18,8 @@ const Owl = (props) => {
           nav
           navElement="div"
           navText={[
-            '<div style="width:24px;height:24px;border-radius:100%;display:flex;align-items:center;justify-content:center"><p style="margin:0;font-weight:600;font-size:18px;"><</div>',
-            '<div style="width:24px;height:24px;border-radius:100%;display:flex;align-items:center;justify-content:center"><p style="margin:0;font-weight:600;font-size:18px;">></div>',
+            '<div style="width:20px;height:24px;border-radius:100%;display:flex;align-items:center;justify-content:center"><p style="margin:0;font-weight:600;font-size:18px;"><</div>',
+            '<div style="width:20px;height:24px;border-radius:100%;display:flex;align-items:center;justify-content:center"><p style="margin:0;font-weight:600;font-size:18px;">></div>',
           ]}
         >
           <div className={classes.card}>

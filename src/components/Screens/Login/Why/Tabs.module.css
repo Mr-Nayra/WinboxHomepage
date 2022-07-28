@@ -9,7 +9,7 @@
     background-color: #0415AA;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 1.2vh;
     border: none;
 }
 
@@ -19,7 +19,6 @@
 }
 
 .dropdownContent {
-    display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -39,13 +38,6 @@
     color: #0415AA;
 }
 
-.dropdown:hover .dropdownContent {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
 
 .buttons {
     display: flex;
