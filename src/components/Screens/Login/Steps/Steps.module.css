@@ -3,6 +3,8 @@
 .container {
   padding: 8vh 60px;
   background: #f5f6ff;
+  display: flex;
+  justify-content: center;
 }
 
 .img {

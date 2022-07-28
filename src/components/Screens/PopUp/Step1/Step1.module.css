@@ -1,4 +1,4 @@
-.container{
+.container {
   height: 50vh;
   overflow-y: scroll;
   margin-right: -2vw;
@@ -27,7 +27,17 @@
   font-weight: 700;
 }
 
-.img{
+.img {
   width: 70%;
   margin-bottom: 2vh;
+}
+
+@media (max-width: 480px) {
+  .headingparah {
+    font-size: 1.5vh;
+  }
+
+  .parah {
+    font-size: 1.3vh
+  }
 }

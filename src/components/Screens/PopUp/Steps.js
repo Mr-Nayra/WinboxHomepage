@@ -15,7 +15,7 @@ const StepsCont = (props) => {
   };
 
   return (
-    <Modal onClick={props.closePopUp}>
+    <Modal onClick={props.closePopUp} modalClass={props.modalClass}>
       <div className={classes.container}>
         <Heading327 className={classes.heading}>
           How to configure Gmail/Google Workspace?
