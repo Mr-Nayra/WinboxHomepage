@@ -32,6 +32,6 @@
 
 @media (max-width: 480px) {
   .modalClass {
-    width: 100vw;
+    width: 90vw !important;
   }
 }
