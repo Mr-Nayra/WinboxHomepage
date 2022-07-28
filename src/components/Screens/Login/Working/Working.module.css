@@ -81,7 +81,9 @@
   }
 
   .videoPlayBtn {
-    height: 30%;
-    width: 30%;
+    left: calc(45%);
+    top: calc(35%);
+    height: 18%;
+    width: 18%;
   }
 }
