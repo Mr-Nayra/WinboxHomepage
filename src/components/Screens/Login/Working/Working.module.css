@@ -77,5 +77,11 @@
 
   .headingparah {
     font-size: 1.3vh;
+    width: 100%;
+  }
+
+  .videoPlayBtn {
+    height: 30%;
+    width: 30%;
   }
 }

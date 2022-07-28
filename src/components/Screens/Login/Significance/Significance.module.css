@@ -130,10 +130,12 @@
   .step {
     font-size: 1.5vh;
     padding: 0.25vh 0;
+    text-align: center;
   }
 
   .stepb {
     font-size: 1.5vh;
     padding: 0.25vh 0;
+    text-align: center;
   }
 }
