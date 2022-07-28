@@ -36,4 +36,8 @@
     width: 23%;
     padding: 3vh 0;
   }
+
+  .div {
+    height: 10vh;
+  }
 }

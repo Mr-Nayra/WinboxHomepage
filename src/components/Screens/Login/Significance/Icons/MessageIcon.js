@@ -1,7 +1,7 @@
 const Icon = (props) => {
   return (
     <svg
-      width="1vw"
+      width="2.2vh"
       height="2.2vh"
       viewBox="0 0 25 21"
       fill="none"
