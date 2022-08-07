@@ -17,7 +17,7 @@
 }
 
 .heroTitle {
-  font-size: 6.8vh;
+  font-size: 44px;
   font-weight: 700;
   padding-bottom: 2vh;
   color: #0415aa;
@@ -26,25 +26,25 @@
 
 .heading {
   font-weight: 500;
-  font-size: 4vh;
+  font-size: 24px;
   color: #323C47;
   padding-bottom: 1.5vh;
   line-height: 110%;
 }
 
 .gif {
-  height: 70vh;
+  height: 340px;
   width: auto;
 }
 
 .heroParah {
-  font-size: 2.7vh;
+  font-size: 18px;
   margin: 3vh 0 5vh 0;
   color: #707683;
 }
 
 .button {
-  font-size: 2.7vh;
+  font-size: 18px;
   height: 7.5vh;
   width: 13.5vw;
   text-decoration: none;

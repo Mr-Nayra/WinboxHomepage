@@ -24,18 +24,18 @@
 
 .parah {
   color: #737485;
-  font-size: 2.2vh;
+  font-size: 13px;
   margin-bottom: 1vh;
 }
 
 .error {
   color: #ea4c46;
-  font-size: 2.2vh;
+  font-size: 13px;
   margin-top: 2vh
 }
 
 .headingparah {
-  font-size: 2.7vh;
+  font-size: 16px;;
   color: #323c47;
   margin: 2vh 0 1vh 0;
   font-weight: 600;
@@ -51,7 +51,7 @@
 }
 
 .loadingparah {
-  font-size: 2.2vh;
+  font-size: 13px;
   color: #0415AA;
   margin-left: 0.5vw;
 }

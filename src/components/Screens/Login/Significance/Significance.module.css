@@ -51,7 +51,7 @@
 
 .step {
   color: #737485;
-  font-size: 2.2vh;
+  font-size: 13px;
   padding: 0.5vh 0;
 }
 
@@ -61,7 +61,7 @@
 
 .stepb {
   color: #737485;
-  font-size: 2.2vh;
+  font-size: 13px;
   padding: 0.5vh 0;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .gif {
-  height: 60vh;
+  height: 360px;
   width: auto;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .headingparah {
-  font-size: 2.7vh;
+  font-size: 16px;;
   padding-bottom: 2vh;
   color: #323c47;
 }
