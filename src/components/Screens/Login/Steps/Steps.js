@@ -35,8 +35,8 @@ const Steps = (props) => {
         </Row2>
         <Row
           stepnumber="3"
-          heading="Monitor your new great deliverability results with detailed reports"
-          parah="Connect your inbox from any email provider (Gmail - GSuite OAuth, Outlook 365, Yahoo Mail, Amazon SES, SMTP, etc.)"
+          heading="+10,000 inboxes ready to raise your email reputation"
+          parah="Get benefit of a +10,000 private inboxes network composed of a mix of the most important email service providers."
           link="Start warming up your inbox now"
           href="https://app.getwinbox.co/login"
         >
@@ -46,18 +46,10 @@ const Steps = (props) => {
             className={classes.img}
           />
         </Row>
-        {/*<Row
-        stepnumber="3"
-        heading="+10,000 inboxes ready to raise your email reputation"
-        parah="Get benefit of a +10,000 private inboxes network."
-        link="Start warming up your inbox now"
-      >
-        <Step3 />
-      </Row>>*/}
         <Row2
           stepnumber="4"
           heading="Monitor your new great deliverability results with detailed reports"
-          parah="Connect your inbox from any email provider (Gmail - GSuite OAuth, Outlook 365, Yahoo Mail, Amazon SES, SMTP, etc.)"
+          parah="Get detailed analytics & monitor your inbox reputation. After few days, you will see first results appears: your cold emails will not land in spam anymore & reach your target inboxes!"
           link="Start warming up your inbox now"
           href="https://app.getwinbox.co/login"
         >

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
 .container {
-  padding: 8vh 60px;
+  padding: 4vh 60px;
   background: #f5f6ff;
   display: flex;
   justify-content: center;
 }
 
 .img {
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 

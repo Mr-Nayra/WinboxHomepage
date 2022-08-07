@@ -1,5 +1,5 @@
 .container {
-  padding: 5vh 60px;
+  padding: 4vh 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 
 .heroParah {
   font-size: 2.7vh;
-  padding-bottom: 3vh;
+  margin: 3vh 0 5vh 0;
   color: #707683;
 }
 
@@ -96,7 +96,7 @@
   }
 
   .gif {
-    margin-top:5vh;
+    margin-top: 5vh;
     height: 35vh;
     width: auto;
   }
