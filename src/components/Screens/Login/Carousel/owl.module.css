@@ -33,6 +33,7 @@
 @media (max-width: 480px) {
   .card {
     padding: 3vh 0;
+    width: 20vw;
   }
 
   .div {
