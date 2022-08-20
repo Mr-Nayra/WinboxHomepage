@@ -22,11 +22,16 @@ const Hero = (props) => {
           </div>
 
           <div>
-            <img
-              src={require("./mail.gif")}
-              alt="banner"
+            <video
               className={classes.gif}
-            />
+              onloadedmetadata="this.muted = true"
+              playsinline
+              autoPlay
+              muted
+              loop
+            >
+              <source src={require("./mail.webm")} type="video/webm" />
+            </video>
           </div>
         </div>
       </Container>

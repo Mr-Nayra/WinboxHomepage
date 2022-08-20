@@ -23,11 +23,16 @@ const Significance = (props) => {
         </div>
         <div className={classes.con}>
           <div>
-            <img
-              src={require("./red.gif")}
-              alt="banner"
+            <video
               className={classes.gif}
-            />
+              onloadedmetadata="this.muted = true"
+              playsinline
+              autoPlay
+              muted
+              loop
+            >
+              <source src={require("./red.webm")} type="video/webm" />
+            </video>
           </div>
           <div className={classes.details}>
             <div>
@@ -79,11 +84,16 @@ const Significance = (props) => {
             </p>
           </div>
           <div>
-            <img
-              src={require("./blue.gif")}
-              alt="banner"
+            <video
               className={classes.gif}
-            />
+              onloadedmetadata="this.muted = true"
+              playsinline
+              autoPlay
+              muted
+              loop
+            >
+              <source src={require("./blue.webm")} type="video/webm" />
+            </video>
           </div>
         </div>
       </Container>

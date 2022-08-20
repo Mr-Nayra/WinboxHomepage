@@ -15,7 +15,7 @@ const Steps = (props) => {
           href="https://app.getwinbox.co/login"
         >
           <img
-            src={require("./Icons/1.png")}
+            src={require("./Icons/1.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
@@ -28,7 +28,7 @@ const Steps = (props) => {
           href="https://app.getwinbox.co/login"
         >
           <img
-            src={require("./Icons/2.png")}
+            src={require("./Icons/2.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
@@ -41,7 +41,7 @@ const Steps = (props) => {
           href="https://app.getwinbox.co/login"
         >
           <img
-            src={require("./Icons/3.png")}
+            src={require("./Icons/3.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
@@ -54,7 +54,7 @@ const Steps = (props) => {
           href="https://app.getwinbox.co/login"
         >
           <img
-            src={require("./Icons/4.png")}
+            src={require("./Icons/4.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />

@@ -20,14 +20,11 @@ const Hero = (props) => {
           <div class="container">
             <div className={classes.al_video_image}>
               <img
-                src={require("./Laptop.png")}
+                src={require("./Laptop.webp")}
                 alt="Laptop with winbox logo"
                 className={classes.img}
               />
-              <a
-                className={classes.videoPlayBtn}
-                href="#"
-              >
+              <a className={classes.videoPlayBtn} href="#">
                 <img
                   src={require("./playbtn.png")}
                   alt="Laptop with winbox logo"
