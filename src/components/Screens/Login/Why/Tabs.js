@@ -84,21 +84,21 @@ const Tabs = () => {
       <div>
         {tab === "1" && (
           <img
-            src={require("./Icons/1.png")}
+            src={require("./Icons/1.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
         )}
         {tab === "2" && (
           <img
-            src={require("./Icons/2.png")}
+            src={require("./Icons/2.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
         )}
         {tab === "3" && (
           <img
-            src={require("./Icons/3.jpeg")}
+            src={require("./Icons/3.webp")}
             alt="Laptop with winbox logo"
             className={classes.img}
           />
